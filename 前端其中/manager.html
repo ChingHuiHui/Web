@@ -1,0 +1,584 @@
+
+<html lang="zh-Hant-TW">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+   <script
+    src="https://code.jquery.com/jquery-1.9.1.min.js"integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+    crossorigin="anonymous"></script>
+        
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>輔仁大學外校選課系統</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+   <head>
+    </head>
+
+<body>  
+    
+     
+         <!--navbar-->
+    
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+       <div class="container" style="font-family: Microsoft JhengHei;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html"> <i class="material-icons">school</i>   輔仁大學外校選課系統</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+        
+    
+      <!--navbar-->
+         
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" style="padding: 110px 0 0 0">
+                        <div class="modal-body">
+                         <div class="row" >
+                       <div class="col-xs-12"  style="padding: 0;   background-color:#e8fff5; font-family:  Microsoft JhengHei ; font-size: 49px ; text-align: center"  >
+                     <i class=" fa fa-cog fa-1x">
+                   </i>&emsp;管理者系統
+                  </div>
+                  </div>
+                <hr class="star-primary">
+                            
+                           
+          <div class="form-row">
+                <div class="col-xs-2 col-md-3">
+                   </div>
+                     <div class="form-group col-xs-8 col-md-6 " style="text-align: left">
+                       <label for="textId">身分證字號</label>
+                      <input id="textId" type="text" class="form-control" placeholder="請輸入身分證字號" required maxlength="10">
+                    </div>
+                
+                     
+               <div class="form-row col-xs-12" style="padding: 10px ; font-family: Microsoft JhengHei;">
+                    <div class="col-xs-2 col-md-3">
+                        </div>
+                        <div class="col-xs-4 col-md-3" >
+                      <button class="btn btn-success btn-lg">密碼查詢</button>      
+                    </div>  
+             
+               
+                <!-- Button trigger modal -->
+                              <div class="col-xs-3"  >
+              <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModalLong">
+                    核定作業
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">核定作業</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                
+
+                              <table class="table table-striped table-bordered table-hover table-condensed" style="width: 70%" >
+                                  
+                        <caption>申請學生基本資料</caption>
+           
+              
+                                    <tr>
+                                        <th>姓名</th>
+                                        <td>張惠惠</td>
+                                        <th>就讀學校</th>
+                                        <td>東吳大學</td>
+                                    </tr>
+
+
+                                     <tr>
+                                       <th>姓名</th>
+                                        <td>張惠惠</td>
+                                        <th>學系</th>
+                                        <td>資訊管理系</td>
+                                    </tr>
+                                     <tr >
+                                         <th>學系</th>
+                                        <td>資訊管理系</td>
+                                      <th>系所組年級</th>
+                                        <td>大學部 3年級</td>
+
+                                    </tr>
+                                     <tr>
+                                       <th>學號</th>
+                                        <td>406402191</td>
+                                        <th>身分證字號</th>
+                                        <td> F123456789</td>
+                                    </tr>
+                                   <tr>
+                                       <th>行動電話</th>
+                                        <td>0928123456</td>
+                                        <th>連絡電話</th>
+                                        <td>2608-8888</td>
+                                    </tr>
+                                   <tr>
+                                       <th>聯絡地址</th>
+                                        <td>林口區</td>
+                                        <th>電子信箱</th>
+                                        <td>406402191@mail.fju.edu.tw</td>
+                                    </tr>
+                                  <tr>
+                                       <th><font color=red>本校學號</font></th>
+
+                                        <td><font color=red>S10600001</font></td>
+
+
+                                    </tr>
+
+
+
+                              </table>
+
+ 
+
+
+          
+         <table class="table table-striped table-bordered table-hover table-condensed" style="width: 100%">
+             <caption>選課資料</caption>
+           
+               <tr >
+            
+                    <td ><i class="fa fa-edit"></i></td>
+                    <td width=80>開課單位</td>
+                    <td>開課代碼</td>
+                    <td>主開代碼</td>
+                    <td width=80>科目名稱</td>
+                    <td>學分</td>
+                    <td>選別</td>
+                    <td>學分費</td>
+                    <td>語言實習費</td>
+                    <td>電腦實習費</td>
+                    <td>一般實習費</td>
+                    <td>費用小計</td>
+                    <td width=100>審查狀態</td>
+                    <td width=100>核定</td>
+                    
+                    
+                </tr>
+                    
+                 <tr>
+                    <td> <button class="btn btn-warning">編輯</button>  </td>
+                    <td>資管系</td>
+                    <td>D742107390</td>
+                    <td>D742107390</td>
+                    <td>程式設計</td>
+                    <td>4</td>
+                    <td>R</td>
+                    <td>2000</td>
+                     <td>0</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>2600</td>
+                    <td>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+               已通過
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+               未通過
+              </label>
+            </div>
+                                 </td>
+
+                                  <td>
+                 <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                初審
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                繳費
+              </label>
+            </div>
+             <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+              <label class="form-check-label" for="defaultCheck3">
+                核定
+              </label>
+            </div>
+
+               </td>
+
+                            </tr>
+                          <tr>
+                                <td> <button class="btn btn-warning">編輯</button>  </td>
+                                <td>資管系</td>
+                                <td>D741124496</td>
+                                <td>D741124496</td>
+                                <td>web前端設計</td>
+                                <td>2</td>
+                                <td>R</td>
+                                <td>1000</td>
+                                 <td>0</td>
+                                <td>500</td>
+                                <td>100</td>
+                                <td>1600</td>
+                                <td>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+               已通過
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+               未通過
+              </label>
+            </div>
+                                 </td>
+
+                                  <td>
+                 <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                初審
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                繳費
+              </label>
+            </div>
+             <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+              <label class="form-check-label" for="defaultCheck3">
+                核定
+              </label>
+            </div>
+
+               </td>
+
+                </tr>
+                 </table>
+                  </div>
+               </div>
+
+              </div>
+            </div>
+         </div>            
+                <!-- hey-->
+        
+        
+        
+        <div class="form-row col-xs-12">
+
+          <div class="card" >
+              <div class="col-md-3 col-xs-2"></div>
+            <div class="card-header col-xs-2" id="headingTwo" style="padding:20px 0 0 0">
+              <h5 class="mb-0">
+                <button class="btn btn-default collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 學生清單列表
+                   </button>
+                    </h5>
+                    </div>
+              
+                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+               <div class="card-body">
+              <div class="container"  >
+                <div  style="padding: 80px 0 0 0">
+                     <i class="fa fa-search"></i>&emsp;<input type="search" class="light-table-filter" data-table="order-table" placeholder="欲找尋學生之學號">  </div>
+
+             <table class="table table-striped table-bordered table-hover table-condensed order-table" style="width: 100%">
+                   
+              
+             <caption>未完成核定名單</caption>
+                  <tr >
+                    <td  >本校學號</td>
+                    <td width=80px >姓名</td>
+                    <td>身分證字號</td>
+                    <td>就讀學校</td>
+                    <td>就讀學系</td>
+                    <td>就讀系組</td>
+                    <td>就讀年級</td>
+                    <td>原學號</td>
+                    <td>聯絡地址</td>
+                    <td>修齊總學分</td>
+                    <td>聯絡電話</td>
+                    <td>行動電話</td>
+                    
+                </tr>
+                    
+                 <tr>
+                    <td>S1060003</td>
+                    <td>張小晴</td>
+                    <td>F229782552</td>
+                    <td>淡江大學</td>
+                    <td>經濟系</td>
+                    <td>大學部</td>
+                    <td>一</td>
+                    <td>406402252</td>
+                    <td>淡江大學大學部</td>
+                    <td>2</td>
+                    <td>26025852</td>
+                    <td>09285456321</td>
+                </tr>
+                   <tr>
+                   <td>S1060005</td>
+                    <td>陳君君</td>
+                    <td>F22547889</td>
+                    <td>中原大學</td>
+                    <td>生物系</td>
+                    <td>大學部</td>
+                    <td>三</td>
+                    <td>406402402</td>
+                    <td>中原大學大學部</td>
+                    <td>3</td>
+                    <td>26587969</td>
+                    <td>0925474563</td>
+                </tr>
+              
+           
+            </table>
+                  <div style="padding: 20px 0 0 0">
+            <i class="fa fa-search"></i>&emsp;<input type="search" class="light-table-filter" data-table="order-table1" placeholder="欲找尋學生之學號">  </div>
+            <table class="table table-striped table-bordered table-hover table-condensed order-table1" style="width:100%">
+            <caption>已完成核定名單</caption> 
+              
+                <tr  >
+                    <td >本校學號</td>
+                    <td width=80px>姓名</td>
+                    <td>身分證字號</td>
+                    <td>就讀學校</td>
+                    <td>就讀學系</td>
+                    <td>就讀系組</td>
+                    <td>就讀年級</td>
+                    <td>原學號</td>
+                    <td>聯絡地址</td>
+                    <td>修齊總學分</td>
+                    <td>聯絡電話</td>
+                    <td>行動電話</td>
+                    
+                </tr>
+                    
+                 <tr>
+                    <td>S1060001</td>
+                    <td>張惠惠</td>
+                    <td>F229782542</td>
+                    <td>東吳大學</td>
+                    <td>資訊管理系</td>
+                    <td>大學部</td>
+                    <td>二</td>
+                    <td>406402191</td>
+                    <td>東吳大學大學部</td>
+                    <td>3</td>
+                    <td>26025489</td>
+                    <td>0928555666</td>
+                </tr>
+                   <tr>
+                   <td>S1060002</td>
+                    <td>王棉棉</td>
+                    <td>F22547896</td>
+                    <td>淡江大學</td>
+                    <td>會計系</td>
+                    <td>大學部</td>
+                    <td>三</td>
+                    <td>406402218</td>
+                    <td>淡江大學大學部</td>
+                    <td>1</td>
+                    <td>26587789</td>
+                    <td>0925478963</td>
+                </tr>
+                 
+           
+            </table>
+        
+        </div>
+      </div>
+    </div>
+       </div>
+     </div>
+
+                   
+                   
+   <div class="form-row col-xs-12">
+
+      <div class="card" >
+          <div class="col-md-3 col-xs-2"></div>
+        <div class="card-header col-xs-2" id="headingTwo" style="padding: 0">
+              <h5 class="mb-0">
+                <button class="btn btn-default collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          已核定學生科目列表
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+            <div class="container">
+                <div style="padding: 80px 0 10px 0">
+                    <i class="fa fa-search"></i>&emsp;<input type="search" class="light-table-filter" data-table="order-table2" placeholder="欲找尋學生之學號">  </div>
+
+          <table class="table table-striped table-bordered table-hover table-condensed order-table2" style="width:100%">
+
+              
+                <tr width=100 >
+                    <td >本校學號</td>
+                    <td >姓名</td>
+                    <td>身分證字號</td>
+                    <td>就讀學校</td>
+                    <td>就讀學系</td>
+                    <td>就讀系組</td>
+                    <td>就讀年級</td>
+                    <td>原學號</td>
+                    <td>聯絡地址</td>
+                    <td>修齊總學分</td>
+                    <td>聯絡電話</td>
+                    <td>行動電話</td>
+                    
+                </tr>
+                    
+                 <tr>
+                    <td>S1060001</td>
+                    <td>張惠惠</td>
+                    <td>F229782542</td>
+                    <td>東吳大學</td>
+                    <td>資訊管理系</td>
+                    <td>大學部</td>
+                    <td>二</td>
+                    <td>406402191</td>
+                    <td>東吳大學大學部</td>
+                    <td>3</td>
+                    <td>26025489</td>
+                    <td>0928555666</td>
+                </tr>
+                   <tr>
+                   <td>S1060002</td>
+                    <td>王棉棉</td>
+                    <td>F22547896</td>
+                    <td>淡江大學</td>
+                    <td>會計系</td>
+                    <td>大學部</td>
+                    <td>三</td>
+                    <td>406402218</td>
+                    <td>淡江大學大學部</td>
+                    <td>1</td>
+                    <td>26587789</td>
+                    <td>0925478963</td>
+                </tr>
+                 
+           
+            </table>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+                <!--haha--->
+                      
+                       
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+         </div>
+        </div>
+    <script>
+    (function(document) {
+  'use strict';
+
+  // 建立 LightTableFilter
+  var LightTableFilter = (function(Arr) {
+
+    var _input;
+
+    // 資料輸入事件處理函數
+    function _onInputEvent(e) {
+      _input = e.target;
+      var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+      Arr.forEach.call(tables, function(table) {
+        Arr.forEach.call(table.tBodies, function(tbody) {
+          Arr.forEach.call(tbody.rows, _filter);
+        });
+      });
+    }
+
+    // 資料篩選函數，顯示包含關鍵字的列，其餘隱藏
+    function _filter(row) {
+      var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+      row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+    }
+
+    return {
+      // 初始化函數
+      init: function() {
+        var inputs = document.getElementsByClassName('light-table-filter');
+        Arr.forEach.call(inputs, function(input) {
+          input.oninput = _onInputEvent;
+        });
+      }
+    };
+  })(Array.prototype);
+
+  // 網頁載入完成後，啟動 LightTableFilter
+  document.addEventListener('readystatechange', function() {
+    if (document.readyState === 'complete') {
+      LightTableFilter.init();
+    }
+  });
+
+})(document);
+    </script>
+    
+    </body>
+</html>

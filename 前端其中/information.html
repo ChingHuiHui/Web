@@ -1,0 +1,302 @@
+
+
+<html lang="zh-Hant-TW">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+   <script
+    src="https://code.jquery.com/jquery-1.9.1.min.js"integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+    crossorigin="anonymous"></script>
+        
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>輔仁大學外校選課系統</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+   <head>
+    </head>
+
+<body>
+         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+       <div class="container" style="font-family: Microsoft JhengHei;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html"> <i class="material-icons">school</i>   輔仁大學外校選課系統</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+        
+             <div class="container">
+                <div class="row" style="font-family: Microsoft JhengHei;">
+                    <div class="col-lg-12" style="padding: 110px 0 0 0">
+                        <div class="modal-body">
+                               <div class="row" >
+                           <div class="col-xs-12"  style="padding: 0;   background-color:#e8fff5;font-family:  Microsoft JhengHei ; font-size: 49px ; text-align: center" >
+                                                                
+                            <i class="fa fa-list fa-1x">
+                                 </i>&emsp;新增學生基本資料
+                            </div>
+                       </div>
+                            <hr class="star-primary">
+                            
+                           <!-- <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">-->
+                            <div class="col-xs-12 col-md-12">
+                                <div class="col-xs-2 col-md-5">
+                                </div>
+                            <div class="col-xs-8 col-md-2">
+                                
+                            <div style="text-align: center; padding: 0px 0 30 0 ">
+                                <p>申請學生資料</p>
+                           </div>
+                                </div>
+                            <div class=" col-xs-1 col-md-1">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                         <i class="fa fa-question"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header" style="text-align: center">
+                                
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                  <h1 class="modal-title" id="exampleModalLongTitle">STEP</h1>
+                              </div>
+                              <div class="modal-body">
+                                  <font size=3px>
+                                              <h>1.該學期第一次登入之同學,請先進入新增學生基本資料欄位,完成個人基本資料之填寫</h><br/>
+                                <br/>
+                                <h>2.鍵入選課資料,請利用查詢開課代碼連結功能,查詢預修讀科目之開課代碼,並確認課程時間、學分數與選別等資料</h><br/>
+                                <br/>
+                                <h>3.選課資料確定,輸入開課代碼,選別視需要自行修改,資料確認送出後,及登錄建檔至本系統內</h><br/>
+                                <br/>
+                                <h>4.學生基本資料與選課資料確認無誤後,及選擇網頁列印或輸出WORD後列印紙本四份</h><br/>
+                                              <br/>
+                                <h>5.完成資料登錄並送出後,本系統將寄發1組密碼至您提供之Email帳號中,以供查詢、修改資料用。若未收到或遺忘,請透過本系統重新寄發,或電話29053097本校課務組查詢</h><br/>
+                                <br/>
+                                <h>6.若以上輸入資料有誤,請以身分證字號與密碼登入,進行修正送出後再列印紙本4份</h><br/>
+                                <br/>
+                                <h>7.請於2018/03/15(四)21:00前,進入系統登錄,輸入資料印出紙本4份,並日間部請於2018/03/15(四)16:00前,進修部請於 2018/03/15(四)21:00前至本校開課系所單位、教務處課務組、總務處出納組等單位完成選課、繳費核可行政程序,逾期不予受理</h><br/>
+                                <br/>
+                                <h>8.建議使用IE瀏覽器卻報資料完整顯示</h><br/>
+
+                                <h>9.建議將本網站加入信任網站內(工具→相容性檢視設定→新增此網站:輸入www.crosscourse.fju.edu.tw→按下新增按鈕→按下關閉按鈕),確保新增課程時資料完整顯示</h><br/>
+                                          </font>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                  </div>
+                            <hr class="star-primary">
+                          <!--  <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">-->
+             <form action=" " method="post">                   
+              <div class="form-row" style="text-align: left"  >
+                <div>
+                <div class="form-group col-md-5"> 
+                 <label for="txtname">姓名</label>
+                    <input id="txtname"  required="required"  type="text" class="form-control" placeholder="請輸入姓名" required>
+                     </div>
+                    
+                     <div class="form-group col-md-2">
+                          <label for="">性別</label>
+                           <select class="form-control" id="txtname" required>
+                          <option>男</option>
+                            <option>女</option>
+                        </select>                    
+                        </div>
+                       <div class="form-group col-md-3">
+                            <label for="id_label_single">
+                                    就讀學校<br/>
+                                    <div style="padding: 8px 0 0 0">
+                  <select class="js-example-basic-single js-example-responsive " id="id_label_single" style="width: 430px;">
+                                <option>東吳大學</option>
+                                <option>中原大學</option>
+                                <option>銘傳大學</option>
+                                <option>元智大學</option>
+                                <option>淡江大學</option>
+                                <option>政治大學</option>
+                                <option>大同大學</option>
+                                <option>台北大學</option>
+                                <option>中興大學</option>
+                                <option>中央大學</option>
+                                
+                                </select>
+                                </div>
+                </label>         
+             </div>
+                     <div class="form-group col-md-5">
+                            <label for="id_label_single2">
+                                    就讀學系
+                                    <div style="padding: 5px 0 0 0">
+                  <select class="js-example-basic-single  js-example-responsive" id="id_label_single2"  style="width: 430px;">
+                                <option selected>資訊管理系</option>
+                                <option >圖書資訊系</option>
+                                <option >統計資訊系</option>
+                                <option >會計系</option>
+                                <option >行銷管理系</option>
+                                <option >經濟系</option>
+                                <option >法律系</option>
+                                <option >社工系</option>
+                                
+                                </select>
+                                </div>
+                </label>         
+                    
+                    
+                    </div>
+                     <div class="form-group col-md-5">
+                                    <label for="textGroup">系所組</label>
+                                      <input id="textGroup" type="TEXT" class="form-control" placeholder="請輸入系所組" >
+                                       </div>
+                    
+                      <div class="form-group col-md-2">
+                          <label for="textgrade">年級</label>
+                             <select class="form-control" id="textgrade" required>                   
+                                     <option >一</option>
+                                 <option>二</option>
+                                  <option>三</option>
+                                <option>四</option>
+                              </select>                    
+                            </div>
+                    
+                                 <div class="form-group col-md-6">
+                                    <label for="textId">學號</label>
+                                      <input id="textId" type="TEXT" class="form-control" placeholder="請輸入學號" required>
+                                       </div>
+                                         <div class="form-group col-md-6">
+                                         <label for="textPId">身分證字號(居留證字號)</label>
+                                        <input id="textPId" type="TEXT" class="form-control" placeholder="請輸入身分證字號" required maxlength="10">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                            <label for="textPhone">行動電話</label>
+                                              <input id="textPhone" type="TEXT" class="form-control" placeholder="請輸入手機號碼">
+                                              </div>
+                                            <div class="form-group col-md-6">
+                                          <label for="textPhone2">聯絡電話</label>
+                                          <input id="textPhone2" type="TEXT" class="form-control" placeholder="請輸入聯絡電話">
+                                        </div>
+                                       <div class="form-group col-md-2">
+                                       <label for="textNum">郵遞區號</label>
+                                       <input id="textNum" type="TEXT" class="form-control" required>
+                                      </div>
+                                
+                                     <div class="form-group col-md-10">
+                                    <label for="textAddress">地址</label>
+                                    <input id="textAddress" type="TEXT" class="form-control" placeholder="請輸入地址" required>
+                                 </div>
+                    
+                                     <div class="form-group col-md-12">
+                                    <label for="textMail">電子郵件信箱</label>
+                                    <input id="textMain" type="TEXT" class="form-control" placeholder="請輸入郵件信箱" required>
+                                 </div>
+                    
+                      
+                              <div class="form-group col-md-2">
+                            <label for="textsemester">選課學期</label>
+                            <input id="textsemester" type="TEXT" class="form-control" placeholder="一O六2" readonly> 
+                         </div>
+                    
+                      
+                    
+                    
+                    <!-- Button trigger modal -->
+                     <div class="col-md-12" style="padding: 25px ;text-align: center">
+                            <button type="submit" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+                            送出基本資料
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+               <div class="modal-header">
+           <h1 align=center> <div class="	fa fa-check-square ">
+     </div>申請成功</h1>
+           
+        </div>
+           <div class="modal-body" style="text-align: left">                
+              <p>密碼將寄送到所填寫的電子郵件信箱,</p>
+             <p>如有問題請寄信或來電至輔仁大學教務處詢問,</p>
+          <p>取得密碼後進入學生登入頁面,成功登入後進行選課作業。</p>
+          
+          
+          
+
+         
+        
+          </div>
+             <div class="modal-footer">
+                 <a href="index.html">
+               <button type="button" class="btn btn-warning">Close</button>
+               </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                    
+                    
+                    
+                    
+                    
+                  </div>
+               </div> 
+          </form>
+           </div>
+         </div>
+        </div>
+      </div>
+        <script>
+               // In your Javascript (external .js resource or <script> tag)
+                $(document).ready(function() {
+                    $('.js-example-basic-single').select2();
+        });
+    </script>>
+    </body>
+</html>
+         
